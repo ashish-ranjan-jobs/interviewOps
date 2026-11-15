@@ -117,7 +117,7 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
     ],
     "recommendedModes": [
       "system-design",
-      "ai-assisted-engineering",
+      "agentic-design",
       "backend-architecture",
       "concurrency",
       "behavioral"
@@ -156,7 +156,7 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
       "coding",
       "backend-architecture",
       "system-design",
-      "project-deep-dive",
+      "code-review",
       "behavioral"
     ],
     "summary": "Senior Full Stack Java Developer with 4+ years of verified professional experience specializing in React.js + Spring Boot 3.",
@@ -192,7 +192,7 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
     "recommendedModes": [
       "system-design",
       "backend-architecture",
-      "ai-assisted-engineering",
+      "agentic-design",
       "concurrency",
       "behavioral"
     ],
@@ -261,9 +261,9 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
       "sub-400ms latency"
     ],
     "recommendedModes": [
-      "ai-assisted-engineering",
+      "agentic-design",
       "system-design",
-      "project-deep-dive",
+      "code-review",
       "backend-architecture",
       "behavioral"
     ],
@@ -296,7 +296,7 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
       "99.9% uptime"
     ],
     "recommendedModes": [
-      "ai-assisted-engineering",
+      "agentic-design",
       "backend-architecture",
       "system-design",
       "coding",
@@ -334,7 +334,7 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
       "coding",
       "system-design",
       "backend-architecture",
-      "project-deep-dive",
+      "code-review",
       "behavioral"
     ],
     "summary": "Senior Full Stack AI Web Engineer with 4+ years of verified professional experience building end-to-end AI-native web platforms and high- performance asynchronous backend services. Expert in building modern interfaces with React.js, TypeScript, and Next.js paired with robust Python (FastAPI, asyncio) backends. Proven record of delivering real-time Server-Sent Events (SSE) token streaming, persistent conversational state management, and sustaining 99.9% uptime across ~6M conversations. PROFESSIONAL EXPERIENCE",
@@ -369,7 +369,7 @@ export const CANDIDATE_RESUMES: CandidateResume[] = [
       "system-design",
       "backend-architecture",
       "debugging",
-      "project-deep-dive",
+      "code-review",
       "behavioral"
     ],
     "summary": "Senior AI Infrastructure & MLOps Engineer with 4+ years of verified professional experience architecting scalable AI platforms, automated CI/CD evaluation gates, and cloud-native Kubernetes infrastructure. Expert in establishing enterprise observability (OpenTelemetry, Prometheus, Grafana) sustaining 99.9% uptime, automating GenAI quality gating with RAGAS and TruLens, and slashing LLM operating costs by 64% ($180K+/year) via Redis Vector Search semantic caching across distributed clusters. PROFESSIONAL EXPERIENCE",

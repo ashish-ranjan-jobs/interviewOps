@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+website/node_modules/
+website/build/
+website/.docusaurus/
+
+# Build output
+dist/
+studio-web/dist/
+studio-api/dist/
+studio-web/.angular/
+
+# Environment & Secrets — NEVER commit this
+.env
+.env.*
+*.env
+*.pem
+*.key
+studio-api/.env
+studio-api/.env.*
+!.env.example
+!studio-api/.env.example
+
+# Generated output (user content, not tracked by default)
+output/*
+!output/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Temp
+tmp/
+temp/
+
+# InterviewOps Studio local data (runtime, not committed)
+.interviewops-studio/
+studio-api/.interviewops-studio/
+
+# AI Models & Assistants
+CLAUDE.MD
+.claude/*
+.claude/settings.local.json

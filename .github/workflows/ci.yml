@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  ci:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20, 22]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Build CLI
+        run: npm run build
+
+      - name: Run CLI tests
+        run: npm test
+
+      - name: Install studio-api dependencies
+        run: npm ci
+        working-directory: studio-api
+
+      - name: Build studio-api
+        run: npm run build
+        working-directory: studio-api
+
+      - name: Test studio-api
+        run: npm test
+        working-directory: studio-api
+
+      - name: Install studio-web dependencies
+        run: npm ci
+        working-directory: studio-web
+
+      - name: Build studio-web
+        run: npm run build
+        working-directory: studio-web
+
+      - name: Install website dependencies
+        run: npm ci
+        working-directory: website
+
+      - name: Build website
+        run: npm run build
+        working-directory: website
